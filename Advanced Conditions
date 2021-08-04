@@ -1,0 +1,197 @@
+{
+  "nbformat": 4,
+  "nbformat_minor": 0,
+  "metadata": {
+    "colab": {
+      "name": "Class Labs.ipynb",
+      "provenance": [],
+      "toc_visible": true,
+      "authorship_tag": "ABX9TyNR/ez+FgOx+Iwm5bdYhvlr",
+      "include_colab_link": true
+    },
+    "kernelspec": {
+      "name": "python3",
+      "display_name": "Python 3"
+    },
+    "language_info": {
+      "name": "python"
+    }
+  },
+  "cells": [
+    {
+      "cell_type": "markdown",
+      "metadata": {
+        "id": "view-in-github",
+        "colab_type": "text"
+      },
+      "source": [
+        "<a href=\"https://colab.research.google.com/github/aYounglex/classLabsPublic/blob/main/Advanced%20Conditions\" target=\"_parent\"><img src=\"https://colab.research.google.com/assets/colab-badge.svg\" alt=\"Open In Colab\"/></a>"
+      ]
+    },
+    {
+      "cell_type": "code",
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "27f2KYKN1gg5",
+        "outputId": "56df747e-3ce6-46bd-9282-c77af72634f0"
+      },
+      "source": [
+        "x_string = input(\"Enter 1st number:\")\n",
+        "y_string = input(\"Enter 2nd number:\")\n",
+        "##creates two variables that accept user input\n",
+        "\n",
+        "#print(\"Sum: \", x_string + y_string)\n",
+        "##prints a combined result of the inputs instead of mathematical operation\n",
+        "\n",
+        "x = int(x_string)\n",
+        "y = int(y_string)\n",
+        "##int() function casts variables from the String data type to Integer data type\n",
+        "##for printing result of mathematical operation\n",
+        "\n",
+        "print(\"Sum: \", x + y)\n",
+        "\n",
+        "print(\"Difference: \", x - y)\n",
+        "\n",
+        "print(\"Multiplication: \", x * y)\n",
+        "\n",
+        "print(\"Division: \", x / y)\n",
+        "\n",
+        "print(\"Remainder: \", x % y)\n",
+        "## a modulo operation\n"
+      ],
+      "execution_count": 9,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "text": [
+            "Enter 1st number:10\n",
+            "Enter 2nd number:5\n",
+            "Sum:  15\n",
+            "Difference:  5\n",
+            "Multiplication:  50\n",
+            "Division:  2.0\n",
+            "Remainder:  0\n"
+          ],
+          "name": "stdout"
+        }
+      ]
+    },
+    {
+      "cell_type": "markdown",
+      "metadata": {
+        "id": "KAOgp3gFC04H"
+      },
+      "source": [
+        "***Working with User Input***"
+      ]
+    },
+    {
+      "cell_type": "markdown",
+      "metadata": {
+        "id": "NWkSxnzYHlWD"
+      },
+      "source": [
+        "\n",
+        "\n",
+        "# **Basic Conditions**\n",
+        "\n"
+      ]
+    },
+    {
+      "cell_type": "code",
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "gHlZ9Z_SHpmr",
+        "outputId": "a1de1800-b1e4-45ac-ebae-4334764214a0"
+      },
+      "source": [
+        "name = input(\"What is your name? \")\n",
+        "age = input(\"What is your age? \")\n",
+        "## creates two variables that accept user input\n",
+        "\n",
+        "age = int(age)\n",
+        "## int() fn casts variable age from String to Integer\n",
+        "\n",
+        "print(\"Hello {}, your age is {}\".format(name, age))\n",
+        "## prints a greeting with user's name and age\n",
+        "\n",
+        "if age >= 21:\n",
+        "  print(\"You can buy an alcoholic beverage or tobacco products\")\n",
+        "else:\n",
+        "  print(\"You cannot buy an alcoholic beverage or tobacco products\")"
+      ],
+      "execution_count": 13,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "text": [
+            "What is your name? Alex\n",
+            "What is your age? 28\n",
+            "Hello Alex, your age is 28\n",
+            "You can buy an alcoholic beverage or tobacco products\n"
+          ],
+          "name": "stdout"
+        }
+      ]
+    },
+    {
+      "cell_type": "markdown",
+      "metadata": {
+        "id": "bkYzKKaxKXha"
+      },
+      "source": [
+        "# Advanced Conditions"
+      ]
+    },
+    {
+      "cell_type": "code",
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "B13QzvEIL0No",
+        "outputId": "19c9e5ac-a180-4c11-a067-c4cd3951e2bf"
+      },
+      "source": [
+        "#grade = input(\"Enter your grade: \")\n",
+        "## requests user to input a grade and assign it to a variable named grade\n",
+        "\n",
+        "grade = float(input(\"Enter your grade: \"))\n",
+        "## converts variable to an integer/float \n",
+        "\n",
+        "if grade >= 90:\n",
+        "  print(\"A\")\n",
+        "\n",
+        "elif grade >= 80:\n",
+        "  print(\"B\")\n",
+        "\n",
+        "elif grade >= 70:\n",
+        "  print(\"C\")\n",
+        "\n",
+        "elif grade >= 65:\n",
+        "  print(\"D\")\n",
+        "\n",
+        "elif grade >= 00:\n",
+        "  print(\"F\")\n",
+        "\n",
+        "else:\n",
+        "  print(\"ERROR: Grades cannot be negative numbers.\")"
+      ],
+      "execution_count": 28,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "text": [
+            "Enter your grade: 89.9\n",
+            "B\n"
+          ],
+          "name": "stdout"
+        }
+      ]
+    }
+  ]
+}
